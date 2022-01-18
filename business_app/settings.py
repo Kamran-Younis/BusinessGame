@@ -27,7 +27,7 @@ SECRET_KEY = 'ee3*d5h2^2rz^r#^%d9ukusgaipg=rm_-5!f*(3=qum5rqlqei'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['businessgame.pythonanywhere.com']
 
 
 # Application definition
