@@ -27,11 +27,11 @@ SECRET_KEY = 'ee3*d5h2^2rz^r#^%d9ukusgaipg=rm_-5!f*(3=qum5rqlqei'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['businessgame.pythonanywhere.com']
+ALLOWED_HOSTS = ['businessgame.pythonanywhere.com','127.0.0.1']
 
 
 # Application definition
-##added 'business_app' to installed apps 
+##added 'business_app' to installed apps
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'business_app',
+    'business_game',
 ]
 
 MIDDLEWARE = [

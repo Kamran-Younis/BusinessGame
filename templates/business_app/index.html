@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 {% load static %}
-<html>
-<head>
-<title>Business game</title>
-</head>
-<body>
-<h1>Welcome</h1>
-<div>
-This is a business game :-) <br />
-<strong>{{ boldmessage }}</strong><br />
-</div>
-</body>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+    <head>
+        <link rel="stylesheet" type="text/css" href="{% static 'CSS/business_page.css' %}" />
+        <title>Business game</title>
+    </head>
+    <body>
+        <h1>Welcome</h1>
+        <div>
+            <p>This is a business game :-)</p> <br />
+            <a href="/business_app/business_page">Business page</a><br />
+        </div>
+    </body>
 </html>

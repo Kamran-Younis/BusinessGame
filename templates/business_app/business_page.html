@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" xmlns="http://www.w3.org/1999/html" >
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{% static 'CSS/business_page.css' %}" />
+    <title>Your Business</title>
+</head>
+<body>
+<header>
+    <h1>Your Business</h1>
+    <form class="header-right">
+        Bank Balance £ : 1000000<br>
+        <button>Business Rankings</button><br>
+        <button>End turn</button><br>
+    </form>
+</header>
+<aside>
+    <b>Total Profit per turn: £200</b><br>
+    Revenue from sales: £2000<br>
+    Costs:Factories<br>
+    <input id="range1" type="range" min="-500" max="500" value="0">
+    -£1000</br>
+    Costs:Factories<br>
+    <input id="range2" type="range" min="-500" max="500" value="0">
+    -£1000<br>
+    Costs:Factories<br>
+    <input id="range3" type="range" min="-500" max="500" value="0">
+    -£1000<br>
+    Total costs: £1800
+</aside>
+<section>
+    <!--<img src="EnglishMap.jpg" width="100%" height="100%"> image not sorted yet-->
+</section>
+
+
+<script type="text/javascript">
+    function change() {
+        var value = document.getElementById("range1").value;
+        console.log(value);
+    }
+</script>
+</body>
+</html>
