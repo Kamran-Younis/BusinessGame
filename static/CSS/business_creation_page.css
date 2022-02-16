@@ -1,0 +1,29 @@
+h1, h2, h3, h4 {
+    font-family: 'Aladin', cursive;
+}
+
+h1 {
+    color: #FFF;
+    font-family: 'Aladin';
+    font-size: 36pt;
+}
+
+.player-list {
+    font-family: 'Aladin', cursive;
+}
+
+.player {
+    color: #FC055F;    
+}
+
+
+#player-listings {
+    color: #A205FC;
+}
+
+.page-header {
+    background-color: #ff9400;
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding: 20px 20px 20px 40px;
+}

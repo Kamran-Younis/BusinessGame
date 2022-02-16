@@ -21,7 +21,8 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
-    path('', views.index, name='index'),
-    path('business_app/', include('business_game.urls')),
     path('admin/', admin.site.urls),
+    path('', views.index, name='index'),
+    path('', views.business_creation_page, name='business_creation_page'),
+    path('business_app/', include('business_game.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

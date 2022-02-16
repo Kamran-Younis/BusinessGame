@@ -8,4 +8,5 @@ app_name = 'business_game'
 urlpatterns = [
     path('', views.index, name='index'),
     path('business_page', views.business_page, name='business_page'),
+    path('business_creation_page', views.business_creation_page, name='business_creation_page'),
 ]
