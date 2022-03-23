@@ -9,4 +9,7 @@ urlpatterns = [
     path('', views.index, name='index'),
     path('business_page', views.business_page, name='business_page'),
     path('business_creation_page', views.business_creation_page, name='business_creation_page'),
+    path('location_page_london', views.location_page_london, name='location_page_london'),
+    path('location_page_glasgow', views.location_page_glasgow, name='location_page_glasgow'),
+
 ]

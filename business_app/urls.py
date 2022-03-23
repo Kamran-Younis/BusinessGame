@@ -23,6 +23,9 @@ from django.conf.urls.static import static
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index, name='index'),
-    path('', views.business_creation_page, name='business_creation_page'),
+    path('business_page', views.business_page, name='business_page'),
+    path('business_creation_page', views.business_creation_page, name='business_creation_page'),
+    path('location_page_london', views.location_page_london, name='location_page_london'),
+    path('location_page_glasgow', views.location_page_glasgow, name='location_page_glasgow'),
     path('business_app/', include('business_game.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

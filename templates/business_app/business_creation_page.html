@@ -2,10 +2,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <!--  Unnecessary styling
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Aladin" rel="stylesheet">
+    -->
     <link rel="stylesheet" href="{% static 'CSS/business_creation_page.css' %}">
-    <title>Welcome to Text-Based Adventure Game in Django</title>
+    <title>Business Game</title>
   </head>
   <body>
     <div class="page-header">
@@ -14,10 +16,9 @@
 	<div class="content container">
     <div class="row">
         <div class="col-md-12">
-            <form method="POST" class="player-form", "bussiness-form", "product-form">{% csrf_token %}
-                {{ form1.as_p }}
-				{{form2.as_p}}
-				{{form3.as_p}}
+            <form method="POST" >{% csrf_token %}
+                {{business_form}}
+				{{game_form}}
                 <button type="submit" class="save btn btn-default">Submit</button>
             </form>
         </div>

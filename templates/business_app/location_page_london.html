@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" xmlns="http://www.w3.org/1999/html" >
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{% static 'CSS/base.css' %}" />
+    <title>London</title>
+</head>
+<body>
+<header>
+    <h1>London</h1>
+</header>
+<aside>
+    <br> Total Market Share: 27%</br>
+	Number of Factories: 3<br>
+    <button type="button">Buy a Factory</button>
+    </br>
+    Marketing Strategy: Social Media<br>
+    <button type="button">Change</button>
+    </br>
+</aside>
+<section>
+    <img src="{% static "images/map_of_london.jpg" %}" width="640" height="600" alt="Picture of Map" /> <!-- Images -->
+</section>
+
+
+<script type="text/javascript">
+    function change() {
+        var value = document.getElementById("range1").value;
+        console.log(value);
+    }
+</script>
+</body>
+</html>

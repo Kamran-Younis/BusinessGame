@@ -1,28 +1,22 @@
 from django import forms
-from .models import Player, Business, Product
+from .models import *
 
-PRODUCT_CHOICES = [('Toy','toy'),('Phone','phone'),('Car','car'),('Robot','robot'),('Food','food')]
-LOCATIONS = [('Edinburgh','edinburgh'),('London','london'),('Belfast','belfast'),('Cardiff','cardiff')]
 
-class PlayerForm(forms.ModelForm):
-
-    class Meta:
-        model = Player
-        fields = ('name',)
         
 class BusinessForm(forms.ModelForm):
+    businessName = forms.CharField(label = 'Name Your Business')
+    CEOName = forms.CharField(label = 'Your Name')
+    productName = forms.CharField(label = 'Name Your Product')
 
-    starting_location = forms.CharField(label = 'Starting Loaction', widget = forms.Select(choices=LOCATIONS))
+    startingLocation = forms.ModelChoiceField(label="Choose your starting location", queryset=Location.objects.all())
 
     class Meta:
         model = Business
-        fields = ('business_name','product_name','starting_location')
-        
-class ProductForm(forms.ModelForm):
+        fields = ('businessName','CEOName','productName','startingLocation')
 
-    product = forms.CharField(label = 'Product Type', widget = forms.Select(choices=PRODUCT_CHOICES))
-    
+class GameForm(forms.ModelForm):
+    product = forms.ModelChoiceField(label="Choose your product type", queryset=Product.objects.all())
+
     class Meta:
-        model = Product
+        model = Game
         fields = ('product',)
-        
